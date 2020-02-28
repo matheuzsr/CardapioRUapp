@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Cardápio RU",
-    "slug": "Cardápio RU",
+    "slug": "cardapioru",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": ["ios", "android", "web"],

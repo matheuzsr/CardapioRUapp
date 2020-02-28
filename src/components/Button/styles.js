@@ -25,10 +25,10 @@ export const ButtonContainer = styled.TouchableOpacity.attrs({
   activeOpacity: 0.6,
 })`
   background-color: ${({ bgColor }) => (bgColor ? bgColor : COLORS.GREEN)};
-  border-radius: 5px;
+  border-radius: 20px;
   border: 2px solid ${({ bgColor }) => (bgColor ? bgColor : COLORS.GREEN)};
-  margin: 5px 0;
-  padding: 10px;
+  margin: 10px 0;
+  padding: 8px;
   ${({ isBordered }) => isBordered && bordered}
   ${({ isLoading }) => isLoading && loading}
   ${({ noBackground }) => noBackground && noBg}
@@ -39,5 +39,5 @@ export const Text = styled.Text`
     isBordered || noBackground ? COLORS.GREEN : COLORS.WHITE};
   text-align: center;
   font-size: 20px;
-  font-family: opensans-semibold;
+  font-family: sourcesanspro-bold;
 `;

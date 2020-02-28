@@ -11,64 +11,36 @@ import {
   Actions,
   TitleContainer,
   TitleText,
-  NotificationsAction,
-  NotificationsIcon,
-  SearchContainer,
-  SearchField,
-  MapAction,
-  MapIcon,
 } from './styles';
 
-export default function Header({ type, isSearch, isBack, title, navigation }) {
+export default function Header({ isBack, title, navigation }) {
   return (
-    <Container type={type}>
-      <Bar type={type}>
+    <Container>
+      <Bar>
         {isBack ? (
           <ActionsContainer>
             <Actions onPress={() => navigation.goBack()}>
-              <Ionicons
-                name="ios-arrow-back"
-                size={30}
-                color={COLORS.BLUE_DARKER}
-              />
+              <Ionicons name="ios-arrow-back" size={30} color={COLORS.BLACK} />
             </Actions>
           </ActionsContainer>
         ) : (
-          <NotificationsAction
-            onPress={() => navigation.navigate('Notifications')}
-          >
-            <NotificationsIcon />
-          </NotificationsAction>
+          <ActionsContainer />
         )}
         {title && (
           <TitleContainer>
-            <TitleText type={type}>{title}</TitleText>
+            <TitleText>{title}</TitleText>
           </TitleContainer>
         )}
-        {isSearch && (
-          <SearchContainer>
-            <SearchField placeholder="Buscar Locais" />
-          </SearchContainer>
-        )}
-        {isBack ? (
-          <ActionsContainer />
-        ) : (
-          <MapAction>
-            <MapIcon />
-          </MapAction>
-        )}
+        <ActionsContainer />
       </Bar>
     </Container>
   );
 }
 
 Header.propTypes = {
-  type: PropTypes.string.isRequired,
   title: PropTypes.string,
-  description: PropTypes.string,
 };
 
 Header.defaultProps = {
   title: null,
-  description: null,
 };
