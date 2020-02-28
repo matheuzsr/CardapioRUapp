@@ -25,7 +25,7 @@ export default function App(props) {
         <StatusBar
           backgroundColor={COLORS.WHITE}
           translucent
-          barStyle="dark-content"
+          barStyle="light-content"
         />
         <Routes />
       </>

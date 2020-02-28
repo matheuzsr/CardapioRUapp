@@ -20,7 +20,12 @@ export default function Header({ isBack, title, navigation }) {
         {isBack ? (
           <ActionsContainer>
             <Actions onPress={() => navigation.goBack()}>
-              <Ionicons name="ios-arrow-back" size={30} color={COLORS.BLACK} />
+              <Ionicons
+                name="ios-arrow-back"
+                size={30}
+                color={COLORS.BLUE_DARK}
+                style={{ marginTop: 3 }}
+              />
             </Actions>
           </ActionsContainer>
         ) : (

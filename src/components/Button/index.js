@@ -26,7 +26,7 @@ export default function Button({
         {isLoading ? (
           <ActivityIndicator
             size="small"
-            color={isBordered || noBackground ? COLORS.GREEN : COLORS.WHITE}
+            color={isBordered || noBackground ? COLORS.BLUE : COLORS.WHITE}
           />
         ) : (
           <Text isBordered={isBordered} noBackground={noBackground}>

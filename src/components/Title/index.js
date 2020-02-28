@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, TitleText, Bar } from './styles';
+import { Container, TitleText, DateText, Bar } from './styles';
 
-export default function Title({ title }) {
+export default function Title({ title, date, isFull }) {
   return (
     <Container>
-      <TitleText>{title}</TitleText>
-      <Bar />
+      <TitleText isFull={isFull}>{title}</TitleText>
+      <Bar isFull={isFull} />
+      {isFull && <DateText isFull={isFull}>{date}</DateText>}
     </Container>
   );
 }

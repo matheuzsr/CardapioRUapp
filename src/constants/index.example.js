@@ -1,6 +1,9 @@
 export const API_URL = '';
 
 export const COLORS = {
-  BACKGROUND_COLOR: '#62dafc',
-  TEXT_COLOR: '#fff',
+  BLUE: '#004B82',
+  BLUE_DARK: '#051034',
+  WHITE: '#fff',
+  BLACK: '#000',
+  GRAY: '#727272',
 };

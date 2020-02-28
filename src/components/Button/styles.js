@@ -4,7 +4,7 @@ import { COLORS } from '~/constants';
 
 const bordered = css`
   background-color: transparent;
-  border: 2px solid ${COLORS.GREEN};
+  border: 2px solid ${COLORS.BLUE};
 `;
 
 const noBg = css`
@@ -24,9 +24,9 @@ export const Container = styled.View`
 export const ButtonContainer = styled.TouchableOpacity.attrs({
   activeOpacity: 0.6,
 })`
-  background-color: ${({ bgColor }) => (bgColor ? bgColor : COLORS.GREEN)};
+  background-color: ${({ bgColor }) => (bgColor ? bgColor : COLORS.BLUE)};
   border-radius: 20px;
-  border: 2px solid ${({ bgColor }) => (bgColor ? bgColor : COLORS.GREEN)};
+  border: 2px solid ${({ bgColor }) => (bgColor ? bgColor : COLORS.BLUE)};
   margin: 10px 0;
   padding: 8px;
   ${({ isBordered }) => isBordered && bordered}
@@ -36,7 +36,7 @@ export const ButtonContainer = styled.TouchableOpacity.attrs({
 
 export const Text = styled.Text`
   color: ${({ isBordered, noBackground }) =>
-    isBordered || noBackground ? COLORS.GREEN : COLORS.WHITE};
+    isBordered || noBackground ? COLORS.BLUE : COLORS.WHITE};
   text-align: center;
   font-size: 20px;
   font-family: sourcesanspro-bold;

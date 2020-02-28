@@ -11,7 +11,7 @@
     "splash": {
       "image": "./src/assets/splash.png",
       "resizeMode": "cover",
-      "backgroundColor": "#62dafc"
+      "backgroundColor": "#051034"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -24,11 +24,16 @@
     "android": {
       "versionCode": 1,
       "permissions": [],
+      "package": "br.ufes.cardapio",
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/ic_launcher_foreground.png",
         "backgroundImage": "./src/assets/ic_launcher_background.png",
         "backgroundColor": "#62dafc"
       }
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#051034"
     },
     "description": "The Base project template includes the minimum dependencies to run and an empty root component."
   }
